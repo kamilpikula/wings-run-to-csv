@@ -23,7 +23,7 @@ defmodule WingsForLife.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.6"},
-      {:poison, "~> 4.0"}
+      {:jason, "~> 1.2"},
     ]
   end
 end
