@@ -24,6 +24,7 @@ defmodule WingsForLife.MixProject do
     [
       {:httpoison, "~> 1.6"},
       {:jason, "~> 1.2"},
+      {:progress_bar, "~> 2.0"}
     ]
   end
 end
