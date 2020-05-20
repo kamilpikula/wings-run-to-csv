@@ -1,6 +1,7 @@
 defmodule WingsForLife.Data do
   alias WingsForLife.CSV
 
+  @spec data(list()) :: list()
   def data(data) do
     Enum.map(data, fn runner ->
     [

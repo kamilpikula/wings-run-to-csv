@@ -1,5 +1,6 @@
 defmodule WingsForLife.Progress do
 
+  @spec render(number, number) :: :ok
   def render(value1, value2) do
     format = [
       bar: ":",
