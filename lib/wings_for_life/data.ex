@@ -1,8 +1,8 @@
 defmodule WingsForLife.Data do
   alias WingsForLife.CSV
 
-  @spec data(list()) :: list()
-  def data(data) do
+  @spec read(list()) :: list()
+  def read(data) do
     Enum.map(data, fn runner ->
     [
       runner.ranks.global.rank,
