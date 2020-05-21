@@ -7,8 +7,7 @@ defmodule WingsForLife.Application do
 
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: WingsForLife.Worker.start_link(arg)
-      # {WingsForLife.Worker, arg}
+      {WingsForLife.Fetch.fetch(), []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
