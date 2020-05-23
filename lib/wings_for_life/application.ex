@@ -7,7 +7,6 @@ defmodule WingsForLife.Application do
 
   def start(_type, _args) do
     children = [
-      {WingsForLife.Fetch.fetch(), []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

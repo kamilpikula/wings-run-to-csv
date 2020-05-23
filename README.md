@@ -1,21 +1,14 @@
 # WingsForLife
 
-**TODO: Add description**
+Scrap the results of [Wings For Life World Run](https://www.wingsforlifeworldrun.com/) to CSV file.
 
-## Installation
+## Installation and run
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `wings_for_life` to your list of dependencies in `mix.exs`:
+```bash
+cd wings-run-to-csv
 
-```elixir
-def deps do
-  [
-    {:wings_for_life, "~> 0.1.0"}
-  ]
-end
+mix deps.get
+mix compile
+mix scrap
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/wings_for_life](https://hexdocs.pm/wings_for_life).
 
