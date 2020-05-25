@@ -15,6 +15,9 @@ defmodule WingsForLife.Data do
       runner.distance,
     ] |> Enum.join(", ")
     end)
-    |> Enum.map(&CSV.save_csv/1)
+  end
+
+  def processing(data) do
+    data |> read() |> Enum.map(&CSV.save_csv/1)
   end
 end

@@ -5,7 +5,7 @@ defmodule WingsForLife.Fetch do
   def fetch(actualPage \\ 1) do
     %{body: body} = HTTPoison.get!(url(actualPage))
     %{data: data, meta: meta} = Jason.decode!(body, keys: :atoms)
-    Data.read(data)
+    Data.processing(data)
     meta(meta)
   end
 
