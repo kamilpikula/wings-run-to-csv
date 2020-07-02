@@ -1,9 +1,12 @@
 defmodule Mix.Tasks.Scrap do
   use Mix.Task
 
-  @shortdoc "Scrap the results"
-  def run(_) do
+  @impl Mix.Task
+  def run(arg) do
+    year = List.first(arg) |> String.to_integer()
+
     Application.ensure_all_started(:httpoison)
-    WingsForLife.Fetch.fetch()
+    WingsForLife.Fetch.fetch(year)
   end
+
 end
