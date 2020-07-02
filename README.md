@@ -9,6 +9,9 @@ cd wings-run-to-csv
 
 mix deps.get
 mix compile
-mix scrap
 ```
-
+Select the year (list of years: 2014 - first edition - to current year) and run:
+```
+mix scrap 2020
+```
+After scraped - check `data/results.csv`

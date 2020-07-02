@@ -3,10 +3,10 @@ defmodule Mix.Tasks.Scrap do
 
   @impl Mix.Task
   def run(arg) do
-    year = List.first(arg) |> String.to_integer()
+    year = List.first(arg)
 
     Application.ensure_all_started(:httpoison)
-    WingsForLife.Fetch.fetch(year)
+    WingsForLife.Fetch.fetch(1, year)
   end
 
 end
